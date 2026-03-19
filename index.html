@@ -358,7 +358,7 @@
 
                     return `
                     <div ${clickEvent} class="h-10 flex items-center px-3 rounded-lg transition-all border bg-white/10 ${cursorClass}">
-                        <img src="${team.logo}" alt="${team.name}" class="w-6 h-6 object-contain mr-3">
+                        <img src="${team.logo}" alt="${team.name}" class="w-7 h-7 object-contain mr-3">
                         <span class="font-bold text-sm truncate uppercase flex-1 text-white">${team.name}</span>
                         <span class="text-[9px] font-bold bg-black/40 px-1.5 py-0.5 rounded text-white/60 ml-2">${team.conf}</span>
                         ${lockIcon}
@@ -396,7 +396,7 @@
                     const flagsHTML = [1, 2, 3, 4].map(b => `
                         <div class="flex items-center justify-center w-full h-full">
                             ${group.slots[b] 
-                                ? `<img src="${group.slots[b].logo}" alt="${group.slots[b].name}" class="w-8 h-8 object-contain drop-shadow-sm">`
+                                ? `<img src="${group.slots[b].logo}" alt="${group.slots[b].name}" class="w-10 h-10 object-contain drop-shadow-sm">`
                                 : '<span class="opacity-10 text-lg scale-75">⚪</span>'}
                         </div>
                     `).join('');
@@ -456,7 +456,7 @@
 
                         btn.innerHTML = `
                             <div class="flex justify-between w-full mb-2">
-                                <img src="${team.logo}" alt="${team.name}" class="w-8 h-8 object-contain transform group-hover:scale-110 transition-transform">
+                                <img src="${team.logo}" alt="${team.name}" class="w-10 h-10 object-contain transform group-hover:scale-110 transition-transform">
                                 <span class="text-[9px] font-bold px-1.5 py-0.5 rounded h-fit ${badgeClass}">${team.conf}</span>
                             </div>
                             <span class="font-bold text-xs uppercase text-white truncate w-full">${team.name}</span>
